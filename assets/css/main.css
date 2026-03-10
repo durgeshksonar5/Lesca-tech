@@ -900,9 +900,9 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     padding-top: 35px;
 }
 
-.pt-40 {
+/* .pt-40 {
     padding-top: 40px;
-}
+} */
 
 .pt-45 {
     padding-top: 45px;
@@ -1061,7 +1061,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .pb-40 {
-    padding-bottom: 40px;
+    padding-bottom: 0px;
 }
 
 .pb-45 {
@@ -18140,7 +18140,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .fx-footer-1-copyright-text {
-    font-size: 16px;
+    font-size: 13px;
     line-height: 1.2;
     color: rgba(0, 0, 0, 0.6392156863);
     display: flex;
