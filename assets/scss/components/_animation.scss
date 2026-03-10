@@ -1,0 +1,134 @@
+/* 
+	home-function-start
+*/
+
+
+/* 
+	home-function-end
+*/
+
+/* 
+	animation-component-start
+*/
+
+.splitting.animated .char {
+  -webkit-animation: fadeInUp 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;
+  animation: fadeInUp 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;
+  -webkit-animation-delay: calc(30ms * var(--char-index));
+  animation-delay: calc(30ms * var(--char-index));
+}
+
+.splitting .whitespace {
+  width: 10px;
+}
+
+@keyframes fd-bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-20px);
+		-ms-transform:     translateY(-20px);
+		transform:         translateY(-20px)
+	}
+	60% {
+		-webkit-transform: translateY(-10px);
+		-ms-transform:     translateY(-10px);
+		transform:         translateY(-10px)
+	}
+}
+
+@keyframes fd-bounce-2 {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform:     translateY(-5px);
+		transform:         translateY(-5px)
+	}
+	60% {
+		-webkit-transform: translateY(-2.5px);
+		-ms-transform:     translateY(-2.5px);
+		transform:         translateY(-2.5px)
+	}
+}
+
+@keyframes fx-rotated {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes fx-scaling {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+
+}
+
+
+/* 
+  title-ani-css-start
+*/
+.txaa-split-text-2 {
+	text-transform: unset !important;
+	.split-line {
+		div {
+			div {
+				&:nth-child(1) {
+					text-transform: capitalize;
+                    
+				}
+			}
+		}
+	}
+}
+
+
+.fx-cube-1 {
+	transition: var(--cube-1);
+}
+
+.fx-delay-01 {
+	transition-delay: .1s;
+}
+
+.fx-delay-02 {
+	transition-delay: .2s;
+}
+
+.fx-delay-03 {
+	transition-delay: .3s;
+}
+
+.fx-delay-04 {
+	transition-delay: .4s;
+}
+
+.fx-delay-05 {
+	transition-delay: .5s;
+}
+
+.fx-delay-06 {
+	transition-delay: .6s;
+}
+/* 
+  title-ani-css-end
+*/
+
+
+/* 
+	animation-component-start
+*/

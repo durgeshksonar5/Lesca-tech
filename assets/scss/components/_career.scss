@@ -1,0 +1,247 @@
+/* 
+    career-1-start
+*/
+.fx-career-img-slider {
+    &-single {
+        height: 512px;
+        border-radius: 8px;
+
+        @media #{$lg} {
+            height: 400px;
+        }
+
+        @media #{$md} {
+            height: 350px;
+        }
+
+        @media #{$xs} {
+            height: 300px;
+        }
+    }
+
+    &-btn {
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        justify-content: space-between;
+    }
+}
+
+.fx-career-benifit-1 {
+    &-scn-title {
+        max-width: 700px;
+    }
+
+    &-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 32px;
+
+        @media #{$md} {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media #{$xs} {
+            grid-template-columns: 1fr;
+        }
+
+        @media #{$sm} {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &-single {
+            border: 1px solid #DBDBDB;
+            border-radius: 8px;
+            padding: 34px 36px;
+
+            @media #{$xl,$lg,$md,$xs} {
+                padding: 34px 20px;
+            }
+            
+            .item-icon {
+                width: 52px;
+                margin-bottom: 24px;
+            }
+
+            .item-title {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+
+            .item-disc {
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            &:hover {
+                .item-icon {
+                    animation: fd-bounce-2 1s;
+                }
+            }
+        }
+        
+    }
+    
+}
+
+.fx-career-gallery-1 {
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr .5fr;
+        gap: 48px;
+
+        @media #{$md} {
+            grid-template-columns: 1.5fr 1fr;
+        }
+
+        @media #{$xs} {
+            grid-template-columns:  1fr;
+        }
+    }
+
+    &-scn-title {
+        max-width: 515px;
+        margin-top: 110px;
+        margin-bottom: 151px;
+
+        @media #{$xs} {
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+    }
+
+    &-img-1 {
+        height: 386px;
+    }
+
+    &-img-2 {
+        max-width: 271px;
+        height: 227px;
+        margin-left: auto;
+        margin-bottom: 240px;
+
+        @media #{$xs} {
+            margin-bottom: 50px;
+        }
+    }
+
+    &-disc {
+        font-size: 17px;
+        line-height: 30px;
+        opacity: 82%;
+        max-width: 317px;
+    }
+
+    &-big-img {
+        margin-right: -360px;
+        height: 771px;
+        margin-top: 20px;
+
+        @media #{$xxxl} {
+            margin-right: -200px;
+        }
+
+        @media #{$xxl} {
+            margin-right: -100px;
+        }
+
+        @media #{$xl,$lg,} {
+            margin-right: 0px;
+        }
+
+        @media #{$md,$xs} {
+            margin-right: 0px;
+            height: 300px;
+        }
+    }
+    
+}
+
+
+.fx-career-opening-1 {
+    &-scn-title {
+        max-width: 730px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+
+        .scn-disc {
+            margin-top: 17px;
+        }
+    }
+    
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+
+        @media #{$xs} {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &-item {
+        background-image: url(../img/career/noice.png);
+        background-color: #F5F5F5;
+        border-radius: 10px;
+        padding: 45px 48px;
+
+        @media #{$md} {
+            padding: 45px 20px;
+        }
+
+        @media #{$xs} {
+            padding: 45px 20px;
+        }
+
+        @media #{$sm} {
+            padding: 45px 48px;
+        }
+
+        .item-title {
+            font-size: 24px;
+            margin-bottom: 19px;
+            transition: all .3s var(--cube-1);
+
+            @media #{$md,$xs} {
+                font-size: 20px;
+            }
+
+            &:hover {
+                color: var(--fx-clr-pr-1);
+                transform: translateX(3px);
+            }
+        }
+
+        
+        .item-tag {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        
+            li {
+                font-size: 14px;
+                line-height: 1;
+                text-transform: capitalize;
+                font-weight: 400;
+                color: #414141;
+                background: #fff;
+                padding: 10px 14px;
+            }
+        }
+
+        .item-disc {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+/* 
+    career-1-end
+*/

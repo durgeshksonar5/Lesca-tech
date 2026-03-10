@@ -1,0 +1,272 @@
+/* 
+    team-details-1-start
+*/
+.fx-team-details {
+    &-person {
+        padding-top: 250px;
+
+        &-row {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 64px;
+
+            @media #{$md,$xs} {
+                grid-template-columns: 1fr ;
+            }
+        }
+
+        &-img {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 0 15px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+
+            .img-bg {
+                height: 540px;
+                width: 100%;
+                border-radius: 24px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+
+                @media #{$xs} {
+                    height: 280px;
+                }
+
+                @media #{$sm} {
+                    height: 540px;
+                }
+            }
+        }
+
+        &-social {
+            background: #fff;
+            border: 1px solid #EEEEEE;
+            display: inline-flex;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: -12px 12px 36px rgb(0 0 0 / 12%);
+        
+            a {
+                display: inline-flex;
+                width: 50px;
+                height: 50px;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                color: #000;
+                transition: all .3s var(--cube-1);
+
+                &:not(:last-child) {
+                    border-right: 1px solid #EEEEEE;
+                }
+        
+                &:hover {
+                    color: var(--fx-clr-pr-1);
+                }
+            }
+        }
+
+        &-info {
+            .person-bio {
+                font-size: 20px;
+                font-weight: 400;
+                color: var(--fx-clr-pr-1);
+                margin-bottom: 19px;
+            }
+
+            .person-name {
+                font-size: 40px;
+                line-height: 1.16;
+                margin-bottom: 16px;
+
+                @media #{$lg} {
+                    font-size: 34px;
+                }
+
+                @media #{$md} {
+                    font-size: 30px;
+                }
+
+                @media #{$xs} {
+                    font-size: 28px;
+                }
+            }
+            .person-disc {
+                max-width: 584px;
+                margin-bottom: 29px;
+            }
+
+            .person-degi {
+                li {
+                    font-family: var(--fx-font-pr-1);
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: rgb(0 0 0 / 72%);
+
+                    &:not(:last-child) {
+                        margin-bottom: 17px;
+                    }
+
+                    b {
+                        color: #000;
+                        font-weight: 500;
+                        display: inline-block;
+                        width: 20%;
+
+                        @media #{$lg,$md,$xs} {
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+
+            .info-subtitle {
+                font-size: 22px;
+                margin-bottom: 17px;
+            }
+            
+            
+        }
+    }
+
+    &-disc {
+        background: var(--fx-clr-sd-1);
+        padding-top: 150px;
+        padding-bottom: 455px;
+        margin-top: -50px;
+
+        @media #{$xl} {
+            margin-top: -20px;
+        }
+
+        @media #{$lg,$md,$xs} {
+            margin-top: 100px;
+        }
+
+        &-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+
+            @media #{$xs} {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &-content {
+            .title {
+                font-size: 32px;
+                line-height: 1.12;
+                margin-bottom: 28px;
+
+                @media #{$xs} {
+                    font-size: 26px;
+                }
+
+                @media #{$sm} {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        &-skill {
+            > .title {
+                font-size: 32px;
+                line-height: 1.12;
+                margin-bottom: 28px;
+
+                @media #{$xs} {
+                    font-size: 26px;
+                }
+
+                @media #{$sm} {
+                    font-size: 30px;
+                }
+            }
+
+            .fx-skill-1-progress {
+                .title {
+                    font-weight: 400;
+                    font-size: 17px;
+    
+                    span {
+                        &:nth-child(2) {
+                            color: var(--fx-clr-pr-1);
+                        }
+                    }
+    
+                }
+
+                &-line {
+                    background: rgb(255 255 255 / 10%);
+                    .progress-line {
+                        background: var(--fx-clr-pr-1);
+                    }
+                }
+            }
+
+        }
+
+    }
+    
+    &-contact {
+        margin-top: -338px;
+
+        &-row {
+            background: #F6F6F6;
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            border-radius: 16px;
+            overflow: hidden;
+
+            @media #{$md,$xs} {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &-form {
+            padding: 64px;
+
+            @media #{$lg,$md,$xs} {
+                padding: 64px 30px;
+            }
+
+            .title {
+                color: #000;
+                font-size: 32px;
+                line-height: 1.12;
+                margin-bottom: 40px;
+
+                
+                @media #{$lg} {
+                    font-size: 30px;
+                }
+
+                @media #{$xs} {
+                    font-size: 22px;
+                }
+
+                @media #{$sm} {
+                    font-size: 26px;
+                }
+
+            }
+
+            .fx-form-1-input {
+                background: transparent;
+            }
+        }
+    }
+}
+
+
+
+/* 
+    team-details-1-end
+*/

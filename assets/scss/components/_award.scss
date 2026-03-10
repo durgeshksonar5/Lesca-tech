@@ -1,0 +1,63 @@
+/* 
+    award-start
+*/
+.fx-award-1 {
+
+
+    &-bg-img {
+        width: 35%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    
+
+    &-scn-title {
+        max-width: 320px;
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    &-item {
+        width: 100%;
+        max-width: 670px;
+        flex: 0 0 auto;
+
+        &-single {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 35px 0;
+            border-bottom: 2px solid #DBDBDB;
+
+            &:nth-child(1) {
+                border-top: 2px solid #DBDBDB;
+            }
+        
+            .item-title {
+                font-size: 24px;
+                margin-bottom: 7px;
+            }
+        
+            .item-disc {
+                font-size: 16px;
+                line-height: 26px;
+                opacity: 72%;
+            }
+        }
+    }
+}
+
+/* 
+    award-end
+*/

@@ -1,0 +1,95 @@
+/* 
+    skill-1-start
+*/
+.fx-skill-1 {
+    &-area {
+        background: var(--fx-clr-sd-1);
+    }
+
+    &-scn-title  {
+        max-width: 520px;
+        margin-bottom: 120px;
+
+        @media #{$md,$xs} {
+            margin-bottom: 60px;
+        }
+
+        .fx-scn-title-1 {
+            margin-bottom: 25px;
+        }
+        .scn-disc {
+            opacity: 72%;
+        }
+    }
+
+    &-wrap {
+        max-width: 592px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 36px 40px;
+        background: var(--fx-clr-pr-1);
+        border-radius: 8px;
+    }
+
+    &-progress {
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+
+        .title {
+            color: #fff;
+            gap: 15px;
+            margin-bottom: 13px;
+        }
+
+
+        &-line {
+            background: rgb(46 46 46 / 10%);
+            height: 10px;
+            border-radius: 0 100px 100px 0;
+            position: relative;
+            z-index: 1;
+    
+
+            .progress-line {
+                position: absolute;
+                top: -5px;
+                left: 0;
+                height: 100%;
+                background: #fff;
+                border-radius: 0 100px 100px 0;
+            }
+
+        }
+    }
+    
+    &-img {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        border-radius: 12px;
+        height: calc(100% - 24px);
+        width: 50%;
+        z-index: -1;
+
+        @media #{$lg} {
+            width: 40%;
+        }
+
+        @media #{$md,$xs} {
+            width: 40%;
+            position: unset;
+            height: 400px;
+            width: 100%;
+            margin-top: 50px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    
+}
+
+/* 
+    skill-1-end
+*/

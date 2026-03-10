@@ -1,0 +1,152 @@
+/* 
+    counter-3-start
+*/
+.fx-counter-3 {
+    &-area {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    &-wrap {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        gap: 16px;
+
+        @media #{$xs} {
+            grid-template-columns: 1fr;
+        }
+
+        @media #{$sm} {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+    &-box {
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+
+        .fx-counter-1-item-number {
+            font-size: 128px;
+            align-items: end;
+            margin-bottom: -13px;
+
+            @media #{$xl,$lg,$md,$xs} {
+                font-size: 95px;
+            }
+
+            .text {
+                font-size: 64px;
+                color: #000;
+                margin-bottom: 20px;
+
+            }
+        }
+
+        .fx-counter-1-item-disc {
+            opacity: 100%;
+            line-height: 20px;
+        }
+        
+    }
+
+    &-content  {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+
+        @media #{$xxl} {
+            gap: 20px;
+        }
+
+        .icon {
+            animation: fx-rotated 10s linear infinite;
+        }
+
+        .title {
+            font-size: 32px;
+            line-height: 1.03;
+            max-width: 160px;
+            text-transform: uppercase;
+
+            @media #{$xl,$lg,$md,$xs} {
+                font-size: 26px;
+            }
+        }
+
+        .item-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex:  0 0 auto;
+            background: var(--fx-clr-pr-1);
+            width: 54px;
+            height: 54px;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 20px;
+            transition: all .4s var(--cube-1);
+
+            &:hover {
+                transform: scale(90%);
+                background: #000;
+            }
+        }
+    }
+
+    &-content {
+        &-2 {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+
+            @media #{$xxl} {
+                gap: 10px;
+            }
+
+            .item-img {
+                flex: 0 0 auto;
+            }
+    
+            .title {
+                font-size: 32px;
+                line-height: 1.03;
+                max-width: 160px;
+                color: #fff;
+                text-transform: uppercase;
+
+                @media #{$xl,$lg,$md,$xs} {
+                    font-size: 26px;
+                }
+            }
+    
+            .item-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex:  0 0 auto;
+                background: #fff;
+                width: 54px;
+                height: 54px;
+                border-radius: 8px;
+                color: var(--fx-clr-pr-1);
+                font-size: 20px;
+                transition: all .4s var(--cube-1);
+
+                &:hover {
+                    transform: scale(90%);
+                    background: #000;
+                }
+            }
+        }
+    }
+    
+}
+
+/* 
+    counter-3-end
+*/

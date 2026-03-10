@@ -1,0 +1,110 @@
+/* 
+    form-1-start
+*/
+.fx-form-1 {
+
+
+    &-box {
+        &:not(:last-child) {
+            margin-bottom: 28px;
+        }
+
+        &:focus-within .fx-form-1-label {
+            color: var(--fx-clr-pr-1);
+            opacity: 1;
+        }
+    }
+
+    &-label {
+        font-family: var(--fx-font-pr-1);
+        text-transform: capitalize;
+        font-weight: 400;
+        opacity: 56%;
+        color: #000;
+        font-size: 14px;
+        display: block;
+        line-height: 1;
+        margin-bottom: 5px;
+        transition: all .3s var(--cube-1);
+    }
+
+    &-input {
+        display: block;
+        width: 100%;
+        border: none;
+        outline: none;
+        margin: 0;
+        padding: 0px 0px;
+        border-bottom: 1px solid #D9D9D9;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+        transition: all .3s var(--cube-1);
+
+        &::placeholder {
+            opacity: 80%;
+            font-weight: 400;
+        }
+
+        &:is(textarea) {
+            height: 100px;
+        }
+
+        &:hover  {
+            border-color: #000;
+        }
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    }
+
+}
+
+.fx-cta-1-form {
+    &:is(.fx-cta-4) {
+        .fx-cta-1-form-input {
+            &:focus {
+                border-color: var(--fx-clr-sd-3);
+            }
+        }
+
+        .fx-cta-1-form-btn {
+            &:hover {
+                color: var(--fx-clr-sd-3);
+            }
+        }
+    }
+}
+
+.fx-cta-1-form {
+    &:is(.fx-cta-5-form) {
+        .fx-cta-1-form-input {
+            &:focus {
+                border-color: var(--fx-clr-pr-2);
+            }
+        }
+
+        .fx-cta-1-form-btn {
+            &:hover {
+                color: var(--fx-clr-pr-2);
+            }
+        }
+    }
+}
+
+.fx-form-1 {
+    &:is(.has-home-6) {
+        .fx-form-1-box {
+            &:focus-within .fx-form-1-label {
+                color: var(--fx-clr-pr-2);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/* 
+    form-1-end
+*/

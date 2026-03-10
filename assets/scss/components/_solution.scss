@@ -1,0 +1,95 @@
+/* 
+    solution-4-start
+*/
+.fx-solution-4 {
+
+    &-illus-2 {
+        text-align: center;
+        width: 70%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -2;
+    }
+
+    &-scn-title {
+        max-width: 800px;
+    }
+
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 32px;
+
+        @media #{$md,} {
+            grid-template-columns:  1fr 1fr;
+        }
+
+        @media #{$xs} {
+            grid-template-columns:  1fr ;
+        }
+
+        @media #{$sm} {
+            grid-template-columns:  1fr 1fr;
+        }
+    }
+
+    &-card {
+        padding: 44px 48px;
+        background: rgb(255 255 255 / 80%);
+        clip-path: polygon(0 0, 100% 0, 100% 87.5%, 88% 100%, 0 100%);
+        -webkit-backdrop-filter: blur(16px);
+        backdrop-filter: blur(16px);
+
+        @media #{$xl,$lg,$md,$xs} {
+            padding: 44px 25px;
+        }
+
+        .icon {
+            width: 85px;
+            height: 85px;
+            margin-bottom: 40px;
+        }
+
+        .title {
+            font-size: 32px;
+            line-height: .94;
+            margin-bottom: 10px;
+            transition: all .4s var(--cube-1);
+
+            @media #{$lg,$md,$xs} {
+                font-size: 26px;
+            }
+
+            &:hover {
+                color: var(--fx-clr-pr-1);
+                transform: translateX(2px);
+            }
+        }
+
+        .disc {
+            line-height: 26px;
+            opacity: 72%;
+        }
+
+        &:hover {
+            .icon {
+                animation: fd-bounce-2 1s;
+            }
+        }
+    }
+
+    &-illus {
+        width: 47%;
+        position: absolute;
+        right: -10%;
+        top: 10%;
+        z-index: -1;
+    }
+    
+}
+
+/* 
+    solution-4-end
+*/
