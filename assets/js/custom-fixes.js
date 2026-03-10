@@ -1,6 +1,23 @@
 jQuery(function ($) {
   console.log("Custom Fixes Loaded");
 
+  // --- PRELOADER LOGIC ---
+  // Force preloader duration to exactly 2 seconds
+  const $preloader = $("#preloader");
+  if ($preloader.length) {
+    // Intercept premature hiding
+    const preloaderInterval = setInterval(function () {
+      if (!$preloader.hasClass("done-loading")) {
+        $preloader.removeClass("preloaded");
+      }
+    }, 10);
+
+    setTimeout(function () {
+      clearInterval(preloaderInterval);
+      $preloader.addClass("preloaded done-loading");
+    }, 2000);
+  }
+
   // --- UI TOGGLES ---
 
   // Search Toggle
