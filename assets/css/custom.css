@@ -2190,6 +2190,7 @@ header.main-header .header-sticky.active {
 }
 
 .faq-accordion .accordion-header .accordion-button {
+    position: relative;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.333em;
@@ -2203,6 +2204,7 @@ header.main-header .header-sticky.active {
 .faq-accordion .accordion-item .accordion-button.collapsed::after {
     content: '\f13a';
     font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
     position: absolute;
     right: 30px;
     top: 50%;
@@ -10500,6 +10502,7 @@ header.main-header.header-gold .main-menu ul ul li a:focus {
 }
 
 .faq-accordion-prime .accordion-header .accordion-button {
+    position: relative;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.333em;
@@ -10513,6 +10516,7 @@ header.main-header.header-gold .main-menu ul ul li a:focus {
 .faq-accordion-prime .accordion-item-prime .accordion-button.collapsed::after {
     content: '\f13a';
     font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
     position: absolute;
     right: 20px;
     top: 50%;
