@@ -47,11 +47,11 @@
                         <div class="footer-links-prime">
                             <h2>Our Services</h2>
                             <ul>
-                                <li><a href="${root}service/service-detail-1.html">PPH & FRP Ducting</a></li>
-                                <li><a href="${root}service/service-detail-1.html">Scrubbing Systems</a></li>
-                                <li><a href="${root}service/service-detail-1.html">Industrial Piping</a></li>
-                                <li><a href="${root}service/service-detail-1.html">Metallic Fabrication</a></li>
-                                <li><a href="${root}service/service-detail-1.html">Technical Manpower</a></li>
+                                <li><a href="${root}service/pp-frp-scrubber.html">Industrial Scrubbers</a></li>
+                                <li><a href="${root}service/dust-collector.html">Dust Collectors</a></li>
+                                <li><a href="${root}service/centrifugal-blower.html">Centrifugal Blowers</a></li>
+                                <li><a href="${root}service/storage-tank.html">Storage Tanks</a></li>
+                                <li><a href="${root}service.html">View All Services</a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->

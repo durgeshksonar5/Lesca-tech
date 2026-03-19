@@ -30,43 +30,43 @@
                                         Services</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link"
-                                                href="${root}service/service-detail-1.html">Storage Tank
+                                                href="${root}service/storage-tank.html">Storage Tank
                                             </a></li>
                                         <li class="nav-item"><a class="nav-link"
-                                                href="${root}service/service-detail-1.html">Mild Steel
+                                                href="${root}service/mild-steel-structure.html">Mild Steel
                                                 Structure</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="${root}service/service-detail-1.html">PP
+                                        <li class="nav-item"><a class="nav-link" href="${root}service/pp-frp-scrubber.html">PP
                                                 FRP
                                                 Scrubber</a></li>
                                         <li class="nav-item"><a class="nav-link"
-                                                href="${root}service/service-detail-1.html">FRP Pressure
+                                                href="${root}service/frp-pressure-vessel.html">FRP Pressure
                                                 Vessel</a></li>
                                         <li class="nav-item"><a class="nav-link"
-                                                href="${root}service/service-detail-1.html">Dust
+                                                href="${root}service/dust-collector.html">Dust
                                                 Collector</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="${root}service/service-detail-1.html">PP
+                                        <li class="nav-item"><a class="nav-link" href="${root}service/pp-frp-tanks.html">PP
                                                 FRP
                                                 Tanks</a></li>
                                         <li class="nav-item"><a class="nav-link"
-                                                href="${root}service/service-detail-1.html">Centrifugal
+                                                href="${root}service/centrifugal-blower.html">Centrifugal
                                                 Blower</a></li>
                                         <li class="nav-item"><a class="nav-link"
-                                                href="${root}service/service-detail-1.html">HVAC Duct</a>
+                                                href="${root}service/hvac-duct.html">HVAC Duct</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link"
-                                                href="${root}service/service-detail-1.html">FRP Reactor</a>
+                                                href="${root}service/frp-reactor.html">FRP Reactor</a>
                                         </li>
-                                        <li class="nav-item"><a class="nav-link" href="${root}service/service-detail-1.html">PP
+                                        <li class="nav-item"><a class="nav-link" href="${root}service/pp-frp-pipe.html">PP
                                                 FRP Pipe</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link"
-                                                href="${root}service/service-detail-1.html">High Pressure
+                                                href="${root}service/high-pressure-blower.html">High Pressure
                                                 Blower</a></li>
                                         <li class="nav-item"><a class="nav-link"
-                                                href="${root}service/service-detail-1.html">FRP Pipes</a>
+                                                href="${root}service/frp-pipes.html">FRP Pipes</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link"
-                                                href="${root}service/service-detail-1.html">Solar System
+                                                href="${root}service/solar-system-installation-service.html">Solar System
                                                 Installation Service</a></li>
                                     </ul>
                                 </li>
