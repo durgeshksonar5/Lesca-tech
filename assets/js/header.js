@@ -3,11 +3,11 @@
  * This script injects the header HTML into the page.
  * It uses the 'data-root' attribute to handle relative paths.
  */
-(function() {
-    const script = document.currentScript;
-    const root = script.getAttribute('data-root') || './';
-    
-    const headerHTML = `
+(function () {
+  const script = document.currentScript;
+  const root = script.getAttribute("data-root") || "./";
+
+  const headerHTML = `
     <!-- Header Start -->
     <header class="main-header">
         <div class="header-sticky">
@@ -26,7 +26,7 @@
                                 <li class="nav-item"><a class="nav-link" href="${root}index.html">Home</a>
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="${root}about.html">About Us</a>
-                                <li class="nav-item submenu submenu-column-two"><a class="nav-link" href="#">Products &
+                                <li class="nav-item submenu submenu-column-two"><a class="nav-link" href="${root}service.html">Products &
                                         Services</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link"
@@ -90,6 +90,6 @@
     <!-- Header End -->
     `;
 
-    // Inject the header exactly where the script is placed
-    script.insertAdjacentHTML('afterend', headerHTML);
+  // Inject the header exactly where the script is placed
+  script.insertAdjacentHTML("afterend", headerHTML);
 })();
