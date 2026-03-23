@@ -71,6 +71,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="${root}career.html">Career</a></li>
+                                <li class="nav-item"><a class="nav-link" href="${root}gallery.html">Gallery</a></li>
                                 <li class="nav-item"><a class="nav-link" href="${root}contact.html">Contact Us</a></li>
                             </ul>
                         </div>

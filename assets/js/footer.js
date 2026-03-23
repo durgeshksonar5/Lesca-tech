@@ -4,10 +4,10 @@
  * It uses the 'data-root' attribute to handle relative paths.
  */
 (function () {
-    const script = document.currentScript;
-    const root = script.getAttribute("data-root") || "./";
+  const script = document.currentScript;
+  const root = script.getAttribute("data-root") || "./";
 
-    const footerHTML = `
+  const footerHTML = `
     <!-- Main Footer Start -->
     <footer class="main-footer-prime bg-section dark-section">
         <div class="container">
@@ -36,9 +36,8 @@
                             <ul>
                                 <li><a href="${root}index.html">Home</a></li>
                                 <li><a href="${root}about.html">About Us</a></li>
-                                <li><a href="${root}projects.html">Our Projects</a></li>
-                                <li><a href="${root}blog.html">Blog</a></li>
                                 <li><a href="${root}career.html">Career</a></li>
+                                <li><a href="${root}gallery.html">Gallery</a></li>
                                 <li><a href="${root}contact.html">Contact Us</a></li>
                             </ul>
                         </div>
@@ -62,6 +61,7 @@
                             <h2>Contact Information</h2>
                             <ul>
                                 <li><i class="fa fa-phone"></i><a href="tel:9665790016">+91 96657 90016</a></li>
+                                <li><i class="fa fa-phone"></i><a href="tel:9362614870">+91 93626 14870</a></li>
                                 <li><i class="fa fa-envelope"></i><a
                                         href="mailto:info@lescatech.com">info@lescatech.com</a></li>
                                 <li><i class="fa fa-envelope"></i><a
@@ -106,6 +106,6 @@
     <!-- Main Footer End -->
     `;
 
-    // Inject the footer exactly where the script is placed
-    script.insertAdjacentHTML("afterend", footerHTML);
+  // Inject the footer exactly where the script is placed
+  script.insertAdjacentHTML("afterend", footerHTML);
 })();
