@@ -38,6 +38,7 @@
                                 <li><a href="${root}about.html">About Us</a></li>
                                 <li><a href="${root}projects.html">Our Projects</a></li>
                                 <li><a href="${root}blog.html">Blog</a></li>
+                                <li><a href="${root}career.html">Career</a></li>
                                 <li><a href="${root}contact.html">Contact Us</a></li>
                             </ul>
                         </div>
