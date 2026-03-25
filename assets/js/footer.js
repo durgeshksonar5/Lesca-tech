@@ -66,8 +66,7 @@
                                         href="mailto:info@lescatech.com">info@lescatech.com</a></li>
                                 <li><i class="fa fa-envelope"></i><a
                                         href="mailto:project@lescatech.com">project@lescatech.com</a></li>
-                                <li><i class="fa fa-location-dot"></i>Plot no-9, Lane
-                                    number-2, Markal MIDC, Alandi, Pune-412105</li>
+                                <li><i class="fa fa-location-dot"></i>Office No. 203, Second Floor, Jaydeep Business Centre, Indrayaninagar, Bhosri, Pune - 411026 (India)</li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->
