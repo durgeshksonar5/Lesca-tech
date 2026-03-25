@@ -11430,3 +11430,98 @@ header.main-header.header-gold .main-menu ul ul li a:focus {
         flex-direction: column-reverse;
     }
 }
+
+/* --- Our Team Section Styles --- */
+.team-group-image figure {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.team-group-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.owner-profile {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eaeaea;
+    padding: 25px 0;
+}
+
+.owner-image {
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.owner-image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f1f1f1;
+}
+
+/* --- Mobile Fix for Our Team section (Director Profile) --- */
+@media (max-width: 768px) {
+    .team-group-image figure {
+        max-width: 100% !important;
+        margin: 0 0 20px 0 !important;
+    }
+
+    .owner-profile {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 15px !important;
+        text-align: left !important;
+        padding: 20px 0 !important;
+        border-top: 1px solid #eaeaea !important;
+    }
+
+    .owner-image {
+        margin: 0 !important;
+        flex-shrink: 0 !important;
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .owner-image img {
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+        border: 2px solid #f1f1f1 !important;
+    }
+
+    .owner-details {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        text-align: left !important;
+        min-width: 0 !important;
+    }
+
+    .owner-details h4 {
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        margin: 0 !important;
+        color: #1a1a1a !important;
+        line-height: normal !important;
+        white-space: nowrap !important;
+    }
+
+    .owner-details p {
+        font-size: 13px !important;
+        margin: 4px 0 0 !important;
+        color: #555 !important;
+        font-weight: 500 !important;
+        line-height: normal !important;
+        text-transform: capitalize !important;
+    }
+}
