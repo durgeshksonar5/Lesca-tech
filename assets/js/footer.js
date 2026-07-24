@@ -107,4 +107,9 @@
 
   // Inject the footer exactly where the script is placed
   script.insertAdjacentHTML("afterend", footerHTML);
+
+  // Dynamically load the lead/fab integration script
+  const integrationScript = document.createElement("script");
+  integrationScript.src = `${root}assets/js/custom-integration.js`;
+  document.body.appendChild(integrationScript);
 })();
